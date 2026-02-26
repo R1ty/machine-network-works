@@ -1,0 +1,33 @@
+{
+  "name": "machine-network-works",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/server/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node scripts/setup.js",
+    "start:server": "node dist/server/index.js",
+    "start:worker": "node dist/client/index.js",
+    "dev:server": "ts-node src/server/index.ts",
+    "dev:worker": "ts-node src/client/index.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^5.2.1",
+    "@types/express": "^5.0.6",
+    "pusher": "^5.3.2",
+    "pusher-js": "^8.4.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/uuid": "^9.0.7",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.18.1"
+}
